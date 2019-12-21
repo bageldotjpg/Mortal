@@ -1,15 +1,16 @@
 package com.pugz.mortal.common.block;
 
 import com.pugz.mortal.core.registry.BlockRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
+import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.state.IntegerProperty;
 import net.minecraft.state.StateContainer;
+import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.VoxelShapes;
@@ -63,6 +64,19 @@ public class SoulUrnBlock extends Block {
             }
         }
         return false;
+    }
+
+    public BlockRenderType getRenderType(BlockState p_149645_1_) {
+        return BlockRenderType.MODEL;
+    }
+
+    public BlockRenderLayer getRenderLayer() {
+        return BlockRenderLayer.CUTOUT;
+    }
+
+    @Override
+    public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+        return new ItemStack(BlockRegistry.SOUL_URN);
     }
 
     @Override
