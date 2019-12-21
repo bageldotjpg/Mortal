@@ -1,0 +1,20 @@
+modLoader="javafml"
+loaderVersion="[28,]"
+logoFile="logo.png"
+authors="Pugz"
+credits=""
+
+[[mods]]
+modId="mortal"
+version="1.0.0"
+displayName="Mortal"
+description='''
+Discover the mysterious powers of Souls!
+'''
+
+[[dependencies.mortal]]
+    modId="forge"
+    mandatory=true
+    versionRange="[24,)"
+    ordering="NONE"
+    side="BOTH"

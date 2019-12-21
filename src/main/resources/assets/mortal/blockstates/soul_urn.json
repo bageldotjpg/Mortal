@@ -1,0 +1,23 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "size=1": {
+      "textures": {
+        "urn": "mortal:block/soul_urn_small"
+      },
+      "model": "mortal:block/urn_small"
+    },
+    "size=2": {
+      "textures": {
+        "urn": "mortal:block/soul_urn_medium"
+      },
+      "model": "mortal:block/urn_medium"
+    },
+    "size=3": {
+      "textures": {
+        "urn": "mortal:block/soul_urn_large"
+      },
+      "model": "mortal:block/urn_large"
+    }
+  }
+}
