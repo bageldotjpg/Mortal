@@ -3,8 +3,6 @@ package com.pugz.mortal.core.registry;
 import com.pugz.mortal.common.block.*;
 import com.pugz.mortal.core.util.BlockProperties;
 import net.minecraft.block.*;
-import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;

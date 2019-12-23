@@ -1,22 +1,40 @@
 {
   "forge_marker": 1,
   "variants": {
-    "size=1": {
+    "size=1,linked=false": {
       "model": "mortal:block/urn_small",
       "textures": {
         "urn": "mortal:block/soul_urn_small"
       }
     },
-    "size=2": {
+    "size=2,linked=false": {
       "model": "mortal:block/urn_medium",
       "textures": {
         "urn": "mortal:block/soul_urn_medium"
       }
     },
-    "size=3": {
+    "size=3,linked=false": {
       "model": "mortal:block/urn_large",
       "textures": {
         "urn": "mortal:block/soul_urn_large"
+      }
+    },
+    "size=1,linked=true": {
+      "model": "mortal:block/urn_small",
+      "textures": {
+        "urn": "mortal:block/soul_urn_small_linked"
+      }
+    },
+    "size=2,linked=true": {
+      "model": "mortal:block/urn_medium",
+      "textures": {
+        "urn": "mortal:block/soul_urn_medium_linked"
+      }
+    },
+    "size=3,linked=true": {
+      "model": "mortal:block/urn_large",
+      "textures": {
+        "urn": "mortal:block/soul_urn_large_linked"
       }
     }
   }
